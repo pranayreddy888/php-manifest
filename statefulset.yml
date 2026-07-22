@@ -34,12 +34,12 @@ spec:
               cpu: "200m"
 
           volumeMounts:
-            - name: PVC-1
+            - name: pvc-1
               mountPath: /var/lib/mysql
               
       volumeClaimtemplates:
         - metadata:
-            name: PVC-1
+            name: pvc-1
           spec:
             accessModes:
               - ReadWriteOnce
